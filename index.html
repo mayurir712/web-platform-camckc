@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <link href="sass/css/style.css" rel="stylesheet" />
+    <title></title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/49fd075556.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapconsult">
+      <div class="Consult">
+        <div class="Consulttriangle-up"></div>
+        <span class="popuptext"
+          ><img src="DH-popup-icons/consult.svg" />Consult</span
+        >
+
+        <div class="form-outline">
+          <select class="control" id="form1">
+            <option>Search Consultant</option>
+            <option></option>
+          </select>
+
+          <button type="button" class="searchpopupbtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <span class="Frequentuser">Frequent user</span>
+
+        <div class="Frequentuser_icons">
+          <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user2.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user3.svg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapconsult">
+      <div class="Consult">
+        <div class="Consulttriangle-up"></div>
+        <span class="popuptext"
+          ><img src="DH-popup-icons/consult.svg" />Consult</span
+        >
+
+        <div class="form-outline">
+          <!-- <input type="text" id="form1" class="control" value="Search Consultant…" /> -->
+
+          <select class="control" id="form1">
+            <option>Search Consultant</option>
+            <option></option>
+          </select>
+          <button type="button" class="searchpopupbtn" id="searchpopupbtn">
+            <i class="fas fa-search"></i>
+          </button>
+          <div class="searched" id="searched" style="display: none">
+            <ul>
+              <li>
+                <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+                <div class="wrap">
+                  <span class="medium">Robert walter</span>
+                  <span class="small">Reviewer </span>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+                <div class="wrap">
+                  <span class="medium">Robert walter</span>
+                  <span class="small">Reviewer </span>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+                <div class="wrap">
+                  <span class="medium">Robert walter</span>
+                  <span class="small">Reviewer </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="Frequentuser">Frequent user</span>
+
+        <div class="Frequentuser_icons">
+          <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user2.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user3.svg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapconsult">
+      <div class="Consult">
+        <div class="Consulttriangle-up"></div>
+        <span class="popuptext"
+          ><img src="DH-popup-icons/consult.svg" />Consult</span
+        >
+
+        <div class="form-outline">
+          <div class="control">
+            <div class="tagforsearch">
+              <div class="tiny-thumb">
+                <img src="DH-popup-icons/user1.svg" />
+              </div>
+              <div class="tiny-text">John</div>
+              <div class=""><img src="DH-popup-icons/Close-btn.svg" /></div>
+            </div>
+            <div class="tagforsearch">
+              <div class="tiny-thumb">
+                <img src="DH-popup-icons/user1.svg" />
+              </div>
+              <div class="tiny-text">John</div>
+              <div class=""><img src="DH-popup-icons/Close-btn.svg" /></div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="searchpopupbtn"
+            id="searchpopupbtn"
+            onclick="showDiv()"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <span class="Frequentuser">Frequent user</span>
+
+        <div class="Frequentuser_icons">
+          <a href="#"><img src="DH-popup-icons/user1.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user2.svg" /></a>
+          <a href="#"><img src="DH-popup-icons/user3.svg" /></a>
+        </div>
+      </div>
+      <div class="commentbox" id="commentbox">
+        <textarea rows="3" cols="2" maxlength="5000">
+Type your comment</textarea
+        >
+        <div class="actionbtn">
+          <span class="maxchar">(Max 5000 Characters)</span>
+          <input type="button" value="Cancel" class="actbtn" />
+          <input type="button" value="Consult" class="actbtn actbtn_consult" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showDiv() {
+        document.getElementById('commentbox').style.cssText =
+          'visibility: visible; opacity: 1';
+      }
+    </script>
+  </body>
+</html>
